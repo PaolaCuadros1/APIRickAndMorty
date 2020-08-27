@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Rick and Morty</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header position-fixed">
+        <header class="bg-dark text-light text-center">
+            <h1> Personajes de Rick And Morty </h1>
+            <ul class="pagination justify-content-center p-3" id="pagination"></ul>
+        </header>
+    </div>
+
+    <div class="container position-relative">
+        <div id="infoCharecters" class="row position-absolute infoCharecters "></div>
+    </div>
+
+    <footer>
+        <div class="row fixed-bottom w-100 bg-dark text-light text-center ">
+            <div class="col mt-3">
+                <p> Hecho por <img src="./images/LogoP.png" width="100"> con amor </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./getDataAPI/printData.js"></script>
+    <script src="./getDataAPI/getDataCallback.js"></script>
+</body>
+
+</html>
